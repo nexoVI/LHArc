@@ -24,12 +24,26 @@ void Championnat::AgenderMatch(Match match)
 
 void Championnat::AfficherEquipe()
 {
+    list<Equipe>::iterator itE;
 
+    for(itE = listEquipe.begin(); itE != listEquipe.end();itE++)
+    {
+        (*itE).afficher();
+    }
 }
 
 void Championnat::AfficherMatchesJoues()
 {
-
+    list<Match>::iterator itMJ;
+    for(itMJ=listMatches.begin(); itMJ!=listMatches.end();itMJ++)
+    {
+        if((*itMJ).getTermine() == true)
+        {
+        cout << "Lieu   : " << (*itMJ).lieu << endl;
+        cout << "Équipe : " << (*itMJ).getHote() << " - " << (*itMJ).getInvite() << endl;
+        cout << "Score  : " << (*itMJ).getScoreHote() << (*itMJ).getScoreInvite() << endl;
+        }
+    }
 }
 
 void Championnat::JouerMatch(short t1, short t2)
