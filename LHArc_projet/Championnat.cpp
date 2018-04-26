@@ -1,11 +1,43 @@
 #include "Championnat.h"
 
-Championnat::Championnat()
+using namespace std;
+
+Championnat::Championnat(string nom)
 {
-    //ctor
+
 }
 
 Championnat::~Championnat()
 {
-    //dtor
+
+}
+
+void Championnat::AjouterEquipe(Equipe equipe)
+{
+
+}
+
+void Championnat::AgenderMatch(Match match)
+{
+
+}
+
+void Championnat::AfficherEquipe()
+{
+
+}
+
+void Championnat::AfficherMatchesJoues()
+{
+
+}
+
+void Championnat::JouerMatch(short t1, short t2)
+{
+
+}
+
+void Championnat::Reinitialiser()
+{
+
 }
