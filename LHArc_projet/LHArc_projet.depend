@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1524733954 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\championnat.cpp
+	"Championnat.h"
+
+1524733954 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\championnat.h
+
+1524733910 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\equipe.cpp
+	"Equipe.h"
+
+1524733910 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\equipe.h
+
+1524578806 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\joueur.cpp
+	"Joueur.h"
+
+1524578806 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\joueur.h
+
+1524757061 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\main.cpp
+	<iostream>
+	"Match.h"
+
+1524757237 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\match.h
+	"Equipe.h"
+	<string>
+
