@@ -2,7 +2,7 @@
 
 Joueur::Joueur()
 {
-    //ctor
+    //
 }
 
 Joueur::~Joueur()
