@@ -11,6 +11,7 @@ Equipe::~Equipe()
 {
     //dtor
 }
+
 int Equipe::getNiveauEquipe(){
     int sommeNiveauJoueurs;
     for(std::list<Joueur>::iterator it=joueurs.begin(); it!=joueurs.end(); ++it){
