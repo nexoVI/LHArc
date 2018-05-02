@@ -14,7 +14,7 @@ class Match
 {
     public:
         //Constructeurs, destructeurs
-        Match(std::string _Lieu, Equipe _Hote, Equipe _Invite);
+        Match(std::string _Lieu, Equipe& _Hote, Equipe& _Invite);
         ~Match();
 
         //Methodes publiques
@@ -26,8 +26,8 @@ class Match
 
         //Attributs
         std::string Lieu;
-        Equipe Hote;
-        Equipe Invite;
+        Equipe& Hote;
+        Equipe& Invite;
 
     protected:
 
