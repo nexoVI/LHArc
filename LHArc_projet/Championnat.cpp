@@ -1,4 +1,5 @@
 #include "Championnat.h"
+#include <iostream>
 
 using namespace std;
 
@@ -37,10 +38,10 @@ void Championnat::AfficherMatchesJoues()
     list<Match>::iterator itMJ;
     for(itMJ=listMatches.begin(); itMJ!=listMatches.end();itMJ++)
     {
-        if((*itMJ).getTermine() == true)
+        if((*itMJ).isTermine() == true)
         {
-        cout << "Lieu   : " << (*itMJ).lieu << endl;
-        cout << "Équipe : " << (*itMJ).getHote() << " - " << (*itMJ).getInvite() << endl;
+        cout << "Lieu   : " << (*itMJ).Lieu << endl;
+        cout << "Équipe : " << (*itMJ).Hote.nom << " - " << (*itMJ).Invite.nom << endl;
         cout << "Score  : " << (*itMJ).getScoreHote() << (*itMJ).getScoreInvite() << endl;
         }
     }

@@ -9,3 +9,4 @@ Equipe::~Equipe()
 {
     //dtor
 }
+
