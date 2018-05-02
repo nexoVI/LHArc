@@ -31,6 +31,12 @@
 *.out
 *.app
 
+<<<<<<< HEAD
 #Code Blocks
 *.depend
 *.layout
+=======
+# CodeBlocks Files
+*.layout
+*.depend
+>>>>>>> d8af0ee4394135367218987555bff954f6b39698
