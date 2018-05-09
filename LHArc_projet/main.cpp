@@ -111,5 +111,16 @@ int main()
     tournoi.AjouterEquipe(equipe4);
     tournoi.AjouterEquipe(equipe5);
 
+    Match match1("Campus Arc 2", equipe1, equipe2);
+    Match match2("Petaouschnok", equipe3, equipe4);
+    Match match3("Campus Arc 2", equipe1, equipe5);
+    Match match4("Fribourg", equipe2, equipe3);
+    Match match5("Sierre", equipe4, equipe5);
+    Match match6("Petaouschnok", equipe3, equipe1);
+    Match match7("Fribourg", equipe2, equipe4);
+    Match match8("Furstenfeldbruck", equipe5, equipe2);
+    Match match9("Sierre", equipe4, equipe1);
+    Match match10("Furstenfeldbruck", equipe5, equipe3);
+
     return 0;
 }
