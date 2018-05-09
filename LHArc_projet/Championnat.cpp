@@ -1,8 +1,7 @@
 #include "Championnat.h"
 #include <iostream>
-#include "Match.h"
-#include "Equipe.h"
 
+// OLA CEST HYPER FUN !
 using namespace std;
 
 Championnat::Championnat(string nom)
