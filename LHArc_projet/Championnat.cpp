@@ -1,5 +1,7 @@
 #include "Championnat.h"
 #include <iostream>
+#include "Match.h"
+#include "Equipe.h"
 
 using namespace std;
 
@@ -49,7 +51,15 @@ void Championnat::AfficherMatchesJoues()
 
 void Championnat::JouerMatch(short t1, short t2)
 {
+    list<Match>::iterator itM;
 
+    for(itM=listMatches.begin();itM!=listMatches.end();itM++)
+    {
+        if((t1==(*itM).Hote.iD) && (t2==(*itM).Invite.iD))
+        {
+        (*itM).jouer();
+        }
+    }
 }
 
 void Championnat::Reinitialiser()

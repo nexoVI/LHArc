@@ -19,9 +19,6 @@ class Equipe
         short  iD;
         std::list<std::string>   palmares;
 
-        void afficher(){};
-        std::string nom;
-
     protected:
 
     private:
