@@ -122,5 +122,32 @@ int main()
     Match match9("Sierre", equipe4, equipe1);
     Match match10("Furstenfeldbruck", equipe5, equipe3);
 
+    cout << "Les equipes participant au championnat sont :" << endl;
+    tournoi.AfficherEquipe();
+
+    tournoi.AgenderMatch(match1);
+    tournoi.AgenderMatch(match2);
+    tournoi.AgenderMatch(match3);
+    tournoi.AgenderMatch(match4);
+    tournoi.AgenderMatch(match5);
+    tournoi.AgenderMatch(match6);
+    tournoi.AgenderMatch(match7);
+    tournoi.AgenderMatch(match8);
+    tournoi.AgenderMatch(match9);
+    tournoi.AgenderMatch(match10);
+
+    tournoi.JouerMatch(1,2);
+    tournoi.JouerMatch(3,4);
+    tournoi.JouerMatch(1,5);
+    tournoi.JouerMatch(2,3);
+    tournoi.JouerMatch(4,5);
+    tournoi.AfficherMatchesJoues();
+    tournoi.JouerMatch(3,1);
+    tournoi.JouerMatch(2,4);
+    tournoi.JouerMatch(5,2);
+    tournoi.JouerMatch(4,1);
+    tournoi.JouerMatch(5,3);
+    tournoi.AfficherMatchesJoues();
+
     return 0;
 }
