@@ -4,21 +4,26 @@
 
 1524733954 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\championnat.h
 
-1524733910 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\equipe.cpp
+1525087402 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\equipe.cpp
 	"Equipe.h"
 
-1524733910 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\equipe.h
-
-1524578806 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\joueur.cpp
+1525087402 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\equipe.h
 	"Joueur.h"
+	<string>
+	<list>
 
-1524578806 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\joueur.h
+1525087402 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\joueur.cpp
+	"Joueur.h"
+	<iostream>
+
+1525087402 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\joueur.h
+	<string>
 
 1524757362 source:c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\main.cpp
 	<iostream>
 	"Match.h"
 
-1524757237 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\match.h
+1525269866 c:\users\valerian.glardon\documents\he-arc\niveau_2\022_genie_logiciel\11_projet_lharc\lharc\lharc_projet\match.h
 	"Equipe.h"
 	<string>
 

@@ -3,13 +3,9 @@
 #include <time.h>
 #include "math.h"
 
-Match::Match(std::string _Lieu, Equipe _Hote, Equipe _Invite)
+Match::Match(std::string _Lieu, Equipe& _Hote, Equipe& _Invite) : Lieu(_Lieu), Hote(_Hote), Invite(_Invite)
 {
     //Constructeur
-
-    Lieu = _Lieu;
-    Hote = _Hote;
-    Invite = _Invite;
 
     scoreHote = 0;
     scoreInvite = 0;
@@ -27,8 +23,8 @@ void Match::jouer()
 
     srand(time(NULL));
 
-    int niveauEquipeHote/* = this.Hote.getNiveauEquipe()*/;
-    int niveauEquipeInvite/* = this.Invite.getNiveauEquipe()*/;
+    int niveauEquipeHote = this->Hote.getNiveauEquipe();
+    int niveauEquipeInvite = this->Invite.getNiveauEquipe();
 
     double puissanceEquipeHote = ((double)niveauEquipeHote)/10 - pow((double)niveauEquipeHote, (double)2)/3500; //Plus l'equipe a un bon niveau, plus elle a de chances de marquer des buts
     double puissanceEquipeInvite = ((double)niveauEquipeInvite)/10 - pow((double)niveauEquipeInvite, (double)2)/3500;
