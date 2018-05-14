@@ -138,9 +138,9 @@ void Championnat::AfficherClassement()
         }
 
         list<Equipe>::iterator ite=listEquipe.begin();
-        for(int l=0; l<k; it++, l++)  {}
+        for(int l=0; l<indexMax; ite++, l++)  {}
 
-        std::cout << " " << j+1 << ": " << it->nom << "; score : " << classement[indexMax] << std::endl;
+        std::cout << " " << j+1 << ": " << ite->nom << "; score : " << classement[indexMax] << std::endl;
         classement[indexMax] = -1;
     }
 }
