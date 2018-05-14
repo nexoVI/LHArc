@@ -29,9 +29,12 @@ void Equipe::afficher(){
     for(std::list<std::string>::iterator it1=palmares.begin(); it1!=palmares.end(); ++it1){
     std::cout<<*it1<<std::endl;
     }
+    std::cout<<std::endl;
     for(std::list<Joueur>::iterator it=joueurs.begin(); it!=joueurs.end(); ++it){
         it->Afficher();
+        std::cout<<std::endl;
     }
+    std::cout<<std::endl;
 }
 void Equipe::addpalmares(std::string _nom){
     palmares.push_back(_nom);
