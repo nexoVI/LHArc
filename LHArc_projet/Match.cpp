@@ -43,7 +43,7 @@ void Match::jouer()
     scoreHote = scoreHote<0 ? 0 : scoreHote;
     for (int i=scoreHote; i>0; i--) //Mise a jour du nb de buts mis par joueur
     {
-        Hote.addButJoueur((rand() % Hote.getNbrJoueurs()-1));
+        Hote.addButJoueur((rand() % Hote.getNbrJoueurs()));
     }
 
     int scorePartielInvite = (int)floor((puissanceEquipeInvite + chanceEquipeInvite + faciliteAdversaireInvite)/1.6);
@@ -51,7 +51,7 @@ void Match::jouer()
     scoreInvite = scoreInvite<0 ? 0 : scoreInvite;
     for (int i=scoreInvite; i>0; i--) //Mise a jour du nb de buts mis par joueur
     {
-        Hote.addButJoueur((rand() % Invite.getNbrJoueurs()-1));
+        Invite.addButJoueur((rand() % Invite.getNbrJoueurs()));
     }
 
     termine = true;

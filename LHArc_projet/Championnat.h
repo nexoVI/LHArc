@@ -20,6 +20,7 @@ class Championnat
         void Reinitialiser();
         void AfficherEquipe();
         void AfficherMatchesJoues();
+        void AfficherClassement();
 
     protected:
 

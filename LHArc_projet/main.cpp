@@ -20,7 +20,7 @@ int main()
     listPalmares1.push_back("Spengler cup");
     listPalmares1.push_back("Stanley cup");
 
-    Equipe equipe1("He-Arc", listPalmares1, 1);
+    Equipe equipe1("He-Arc", listPalmares1, 1, "Campus Arc2");
 
     equipe1.engager(joueur1);
     equipe1.engager(joueur2);
@@ -40,7 +40,7 @@ int main()
     listPalmares2.push_back("Swiss League");
     listPalmares2.push_back("LNA");
 
-    Equipe equipe2("HC Fribourg-Gotteron", listPalmares2, 2);
+    Equipe equipe2("HC Fribourg-Gotteron", listPalmares2, 2, "Fribourg");
 
     equipe2.engager(joueur6);
     equipe2.engager(joueur7);
@@ -57,7 +57,7 @@ int main()
 
     list<string> listPalmares3;
 
-    Equipe equipe3("Les pieds nickles", listPalmares3, 3);
+    Equipe equipe3("Les pieds nickles", listPalmares3, 3, "BidonVille");
 
     equipe3.engager(joueur11);
     equipe3.engager(joueur12);
@@ -76,7 +76,7 @@ int main()
 
     listPalmares4.push_back("Regional Valais cup");
 
-    Equipe equipe4("Les Standards", listPalmares4, 4);
+    Equipe equipe4("Les Standards", listPalmares4, 4, "Sierre");
 
     equipe4.engager(joueur16);
     equipe4.engager(joueur17);
@@ -84,32 +84,12 @@ int main()
     equipe4.engager(joueur19);
     equipe4.engager(joueur20);
 
-    //5eme Equipe
-    Joueur joueur21("von Glinken", 0, 99);
-    Joueur joueur22("von Allemand", 0, 99);
-    Joueur joueur23("von Gluck", 0, 99);
-    Joueur joueur24("von Schnitzel", 0, 1);
-    Joueur joueur25("von Bundesweit", 0, 1);
-
-    list<string> listPalmares5;
-
-    listPalmares5.push_back("Deutsch cup");
-
-    Equipe equipe5("von Deutsch", listPalmares5, 5);
-
-    equipe5.engager(joueur21);
-    equipe5.engager(joueur22);
-    equipe5.engager(joueur23);
-    equipe5.engager(joueur24);
-    equipe5.engager(joueur25);
-
     Championnat tournoi("LHARC");
 
     tournoi.AjouterEquipe(equipe1);
     tournoi.AjouterEquipe(equipe2);
     tournoi.AjouterEquipe(equipe3);
     tournoi.AjouterEquipe(equipe4);
-    tournoi.AjouterEquipe(equipe5);
 
     cout << "Les equipes participant au championnat sont :" << endl;
     tournoi.AfficherEquipe();
@@ -118,17 +98,18 @@ int main()
 
     tournoi.JouerMatch(1,2);
     tournoi.JouerMatch(3,4);
-    tournoi.JouerMatch(1,5);
     tournoi.JouerMatch(2,3);
-    tournoi.JouerMatch(4,5);
     tournoi.JouerMatch(3,1);
     tournoi.JouerMatch(2,4);
-    tournoi.JouerMatch(5,2);
     tournoi.JouerMatch(4,1);
-    tournoi.JouerMatch(5,3);
 
     cout << "Les matchs joues sont : " << endl;
     tournoi.AfficherMatchesJoues();
+
+    tournoi.AfficherEquipe();
+
+    std::cout << "-------------------------" << std::endl << "Le classement est:" << std::endl;
+    tournoi.AfficherClassement();
 
     return 0;
 }

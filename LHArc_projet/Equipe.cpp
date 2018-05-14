@@ -1,5 +1,7 @@
 #include "Equipe.h"
 #include <iostream>
+#include <list>
+
 Equipe::Equipe(std::string _nom, std::list<std::string> _palmares, short _iD, std::string _lieu)
 {
     nom=_nom;
@@ -51,10 +53,9 @@ int Equipe::getNbrJoueurs(){
     return joueurs.size();
 }
 void Equipe::addButJoueur(int numeroJoueur){
-    Joueur *it;
-    joueurs.begin();
+    std::list<Joueur>::iterator it = joueurs.begin();
     for (int i=0;i<numeroJoueur;i++){
-        *it=joueurs.front();
+        it++;
     }
     it->addBut();
 }

@@ -30,8 +30,9 @@ void Championnat::AgenderMatch()
 
     for(iti=listEquipe.begin(); iti != --listEquipe.end(); iti++)
     {
-        for(itj=listEquipe.begin()++; itj != listEquipe.end(); itj++)
+        for(itj=iti; itj != --listEquipe.end();)
         {
+            itj++;
             listMatches.push_back(Match(iti->getLieu(), (*iti), (*itj)));
         }
     }
@@ -70,7 +71,7 @@ void Championnat::JouerMatch(short t1, short t2)
 
     for(itM=listMatches.begin();itM!=listMatches.end();itM++)
     {
-        if((t1==(*itM).Hote.iD) && (t2==(*itM).Invite.iD))
+        if(((t1==(*itM).Hote.iD) && (t2==(*itM).Invite.iD)) || ((t2==(*itM).Hote.iD) && (t1==(*itM).Invite.iD)))
         {
         (*itM).jouer();
         while(!(*itM).isTermine());
@@ -82,4 +83,64 @@ void Championnat::Reinitialiser()
 {
     listEquipe.clear();
     listMatches.clear();
+}
+
+void Championnat::AfficherClassement()
+{
+    int classement[listEquipe.size()];
+
+    list<Equipe>::iterator it;
+    list<Match>::iterator itm;
+    int i;
+    for(it = listEquipe.begin(), i=0; it != listEquipe.end(); it++, i++)
+    {
+        classement[i] = 0;
+        for(itm = listMatches.begin(); itm != listMatches.end(); itm++)
+        {
+            if(it->iD == itm->Hote.iD)
+            {
+                if(itm->getScoreHote() > itm->getScoreInvite())
+                {
+                classement[i] += 3;
+                }
+                else if(itm->getScoreHote() == itm->getScoreInvite())
+                {
+                classement[i] += 1;
+                }
+            }
+            else if(it->iD == itm->Invite.iD)
+            {
+                if(itm->getScoreInvite() > itm->getScoreHote())
+                {
+                classement[i] += 3;
+                }
+                else if(itm->getScoreInvite() == itm->getScoreHote())
+                {
+                classement[i] += 1;
+                }
+            }
+        }
+    }
+
+    int _max = -1;
+    int indexMax = -1;
+    for(int j=0; j<listEquipe.size(); j++)
+    {
+        int k=0;
+        _max = -1;
+        for(; k<listEquipe.size(); k++)
+        {
+            if(classement[k] > _max)
+            {
+                _max = classement[k];
+                indexMax = k;
+            }
+        }
+
+        list<Equipe>::iterator ite=listEquipe.begin();
+        for(int l=0; l<k; it++, l++)  {}
+
+        std::cout << " " << j+1 << ": " << it->nom << "; score : " << classement[indexMax] << std::endl;
+        classement[indexMax] = -1;
+    }
 }
