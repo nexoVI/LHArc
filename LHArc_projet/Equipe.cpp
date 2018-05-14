@@ -1,5 +1,5 @@
 #include "Equipe.h"
-
+#include <iostream>
 Equipe::Equipe(std::string _nom, std::list<std::string> _palmares, short _iD)
 {
     nom=_nom;
@@ -25,6 +25,13 @@ void Equipe::engager(Joueur _joueur){
     joueurs.push_back(_joueur);
 }
 void Equipe::afficher(){
+    std::cout<<"Palmares:"<<std::endl;
+    for(std::list<std::string>::iterator it1=palmares.begin(); it1!=palmares.end(); ++it1){
+    std::cout<<*it1<<std::endl;
+    }
+    for(std::list<Joueur>::iterator it=joueurs.begin(); it!=joueurs.end(); ++it){
+        it->Afficher();
+    }
 }
 void Equipe::addpalmares(std::string _nom){
     palmares.push_back(_nom);
