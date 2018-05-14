@@ -42,7 +42,7 @@ void Championnat::AfficherMatchesJoues()
         if((*itMJ).isTermine() == true)
         {
         cout << "Lieu   : " << (*itMJ).Lieu << endl;
-        cout << "Équipe : " << (*itMJ).Hote.nom << " - " << (*itMJ).Invite.nom << endl;
+        cout << "Equipe : " << (*itMJ).Hote.nom << " - " << (*itMJ).Invite.nom << endl;
         cout << "Score  : " << (*itMJ).getScoreHote() << (*itMJ).getScoreInvite() << endl;
         }
     }
@@ -57,6 +57,7 @@ void Championnat::JouerMatch(short t1, short t2)
         if((t1==(*itM).Hote.iD) && (t2==(*itM).Invite.iD))
         {
         (*itM).jouer();
+        while(!(*itM).isTermine());
         }
     }
 }

@@ -97,11 +97,11 @@ int main()
 
     Equipe equipe5("von Deutsch", listPalmares5, 5);
 
-    equipe1.engager(joueur21);
-    equipe1.engager(joueur22);
-    equipe1.engager(joueur23);
-    equipe1.engager(joueur24);
-    equipe1.engager(joueur25);
+    equipe5.engager(joueur21);
+    equipe5.engager(joueur22);
+    equipe5.engager(joueur23);
+    equipe5.engager(joueur24);
+    equipe5.engager(joueur25);
 
     Championnat tournoi("LHARC");
 
@@ -141,12 +141,13 @@ int main()
     tournoi.JouerMatch(1,5);
     tournoi.JouerMatch(2,3);
     tournoi.JouerMatch(4,5);
-    tournoi.AfficherMatchesJoues();
     tournoi.JouerMatch(3,1);
     tournoi.JouerMatch(2,4);
     tournoi.JouerMatch(5,2);
     tournoi.JouerMatch(4,1);
     tournoi.JouerMatch(5,3);
+
+    cout << "Les matchs joues sont : " << endl;
     tournoi.AfficherMatchesJoues();
 
     return 0;
