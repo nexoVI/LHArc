@@ -27,22 +27,23 @@
 	"Equipe.h"
 	<string>
 
-1526316971 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\equipe.cpp
+1526318160 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\equipe.cpp
 	"Equipe.h"
+	<iostream>
 
-1526316541 c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\equipe.h
+1526324179 c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\equipe.h
 	"Joueur.h"
 	<string>
 	<list>
 
-1525275669 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\joueur.cpp
+1526318160 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\joueur.cpp
 	"Joueur.h"
 	<iostream>
 
 1525275669 c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\joueur.h
 	<string>
 
-1526302927 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\main.cpp
+1526317881 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\main.cpp
 	<iostream>
 	"Match.h"
 	"Equipe.h"
@@ -52,11 +53,12 @@
 	"Equipe.h"
 	<string>
 
-1526317347 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\championnat.cpp
+1526325337 source:c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\championnat.cpp
 	"Championnat.h"
 	<iostream>
+	<string>
 
-1524831531 c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\championnat.h
+1526321982 c:\users\thomas.frantzen\desktop\génie_logiciel\championnat_hockey\lharc\lharc_projet\championnat.h
 	<list>
 	<string>
 	"Equipe.h"

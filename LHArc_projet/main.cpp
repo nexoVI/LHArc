@@ -111,30 +111,10 @@ int main()
     tournoi.AjouterEquipe(equipe4);
     tournoi.AjouterEquipe(equipe5);
 
-    Match match1("Campus Arc 2", equipe1, equipe2);
-    Match match2("Petaouschnok", equipe3, equipe4);
-    Match match3("Campus Arc 2", equipe1, equipe5);
-    Match match4("Fribourg", equipe2, equipe3);
-    Match match5("Sierre", equipe4, equipe5);
-    Match match6("Petaouschnok", equipe3, equipe1);
-    Match match7("Fribourg", equipe2, equipe4);
-    Match match8("Furstenfeldbruck", equipe5, equipe2);
-    Match match9("Sierre", equipe4, equipe1);
-    Match match10("Furstenfeldbruck", equipe5, equipe3);
-
     cout << "Les equipes participant au championnat sont :" << endl;
     tournoi.AfficherEquipe();
 
-    tournoi.AgenderMatch(match1);
-    tournoi.AgenderMatch(match2);
-    tournoi.AgenderMatch(match3);
-    tournoi.AgenderMatch(match4);
-    tournoi.AgenderMatch(match5);
-    tournoi.AgenderMatch(match6);
-    tournoi.AgenderMatch(match7);
-    tournoi.AgenderMatch(match8);
-    tournoi.AgenderMatch(match9);
-    tournoi.AgenderMatch(match10);
+    tournoi.AgenderMatch();
 
     tournoi.JouerMatch(1,2);
     tournoi.JouerMatch(3,4);

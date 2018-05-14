@@ -1,7 +1,7 @@
 #include "Championnat.h"
 #include <iostream>
+#include <string>
 
-// OLA CEST HYPER FUN !
 using namespace std;
 
 Championnat::Championnat(string nom)
@@ -11,7 +11,11 @@ Championnat::Championnat(string nom)
 
 Championnat::~Championnat()
 {
- //dstr
+//    list<Match>::iterator itM;
+//    for(itM=listMatches.begin();itM!=listMatches.end(); itM++)
+//    {
+//        delete listMatches.pop_front(*itM);
+//    }
 }
 
 void Championnat::AjouterEquipe(Equipe equipe)
@@ -19,9 +23,18 @@ void Championnat::AjouterEquipe(Equipe equipe)
     listEquipe.push_front(equipe);
 }
 
-void Championnat::AgenderMatch(Match match)
+void Championnat::AgenderMatch()
 {
-    listMatches.push_front(match);
+    list<Equipe>::iterator iti;
+    list<Equipe>::iterator itj;
+
+    for(iti=listEquipe.begin(); iti != --listEquipe.end(); iti++)
+    {
+        for(itj=listEquipe.begin()++; itj != listEquipe.end(); itj++)
+        {
+            listMatches.push_back(Match(iti->getLieu(), (*iti), (*itj)));
+        }
+    }
 }
 
 void Championnat::AfficherEquipe()
