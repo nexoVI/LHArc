@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include "math.h"
+#include "Equipe.h"
+
 
 Match::Match(std::string _Lieu, Equipe& _Hote, Equipe& _Invite) : Lieu(_Lieu), Hote(_Hote), Invite(_Invite)
 {
@@ -39,10 +41,18 @@ void Match::jouer()
 
     scoreHote = (int)floor((puissanceEquipeHote + chanceEquipeHote + faciliteAdversaireHote)/1.6);
     scoreHote = scoreHote<0 ? 0 : scoreHote;
+    for (int i=scoreHote; i>0; i--) //Mise a jour du nb de buts mis par joueur
+    {
+        Hote.addButJoueur((rand() % Hote.getNbrJoueurs()-1));
+    }
 
     int scorePartielInvite = (int)floor((puissanceEquipeInvite + chanceEquipeInvite + faciliteAdversaireInvite)/1.6);
     scoreInvite = (int)floor(0.9*(double)scorePartielInvite); //Rajout d'une difficulte pour l'equipe invitee
     scoreInvite = scoreInvite<0 ? 0 : scoreInvite;
+    for (int i=scoreInvite; i>0; i--) //Mise a jour du nb de buts mis par joueur
+    {
+        Hote.addButJoueur((rand() % Invite.getNbrJoueurs()-1));
+    }
 
     termine = true;
 }
