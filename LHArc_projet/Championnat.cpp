@@ -41,9 +41,12 @@ void Championnat::AfficherMatchesJoues()
     {
         if((*itMJ).isTermine() == true)
         {
+        cout << endl;
+        cout << "********************************************************************" << endl;
+        cout << endl;
         cout << "Lieu   : " << (*itMJ).Lieu << endl;
         cout << "Equipe : " << (*itMJ).Hote.nom << " - " << (*itMJ).Invite.nom << endl;
-        cout << "Score  : " << (*itMJ).getScoreHote() << (*itMJ).getScoreInvite() << endl;
+        cout << "Score  : " << (*itMJ).getScoreHote() << " - " << (*itMJ).getScoreInvite() << endl;
         }
     }
 }

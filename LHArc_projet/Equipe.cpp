@@ -14,9 +14,9 @@ Equipe::~Equipe()
 }
 
 int Equipe::getNiveauEquipe(){
-    int sommeNiveauJoueurs;
+    int sommeNiveauJoueurs = 0;
     for(std::list<Joueur>::iterator it=joueurs.begin(); it!=joueurs.end(); ++it){
-        sommeNiveauJoueurs=+it->getNiveauJoueur();
+        sommeNiveauJoueurs+=it->getNiveauJoueur();
     }
     return sommeNiveauJoueurs/joueurs.size();
 

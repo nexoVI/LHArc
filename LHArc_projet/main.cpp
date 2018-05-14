@@ -49,11 +49,11 @@ int main()
     equipe2.engager(joueur10);
 
     //3eme Equipe
-    Joueur joueur11("DelaFontaine", 0, 1);
-    Joueur joueur12("DuGrenier", 0, 1);
-    Joueur joueur13("Hute", 0, 1);
-    Joueur joueur14("Houblon", 0, 1);
-    Joueur joueur15("Rouge", 0, 1);
+    Joueur joueur11("DelaFontaine", 0, 50);
+    Joueur joueur12("DuGrenier", 0, 51);
+    Joueur joueur13("Hute", 0, 52);
+    Joueur joueur14("Houblon", 0, 53);
+    Joueur joueur15("Rouge", 0, 54);
 
     list<string> listPalmares3;
 

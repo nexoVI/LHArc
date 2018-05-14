@@ -34,12 +34,15 @@ void Match::jouer()
 
     double faciliteAdversaireHote = log10((double)niveauEquipeHote/(double)niveauEquipeInvite) / log10(6) * 6; //Grande facilite si l'autre equipe a un niveau faible par rapport a celui de cette equipe
     double faciliteAdversaireInvite = log10((double)niveauEquipeInvite/(double)niveauEquipeHote) / log10(6) * 6;
-    faciliteAdversaireHote = faciliteAdversaireHote > 0 ? faciliteAdversaireHote : 0; //si plus petit que 0, on met a 0 (plancher a 0)
-    faciliteAdversaireInvite = faciliteAdversaireInvite > 0 ? faciliteAdversaireInvite : 0; //si plus petit que 0, on met a 0 (plancher a 0)
+    faciliteAdversaireHote = faciliteAdversaireHote >= 0 ? faciliteAdversaireHote : 0; //si plus petit que 0, on met a 0 (plancher a 0)
+    faciliteAdversaireInvite = faciliteAdversaireInvite >= 0 ? faciliteAdversaireInvite : 0; //si plus petit que 0, on met a 0 (plancher a 0)
 
     scoreHote = (int)floor((puissanceEquipeHote + chanceEquipeHote + faciliteAdversaireHote)/1.6);
+    scoreHote = scoreHote<0 ? 0 : scoreHote;
+
     int scorePartielInvite = (int)floor((puissanceEquipeInvite + chanceEquipeInvite + faciliteAdversaireInvite)/1.6);
     scoreInvite = (int)floor(0.9*(double)scorePartielInvite); //Rajout d'une difficulte pour l'equipe invitee
+    scoreInvite = scoreInvite<0 ? 0 : scoreInvite;
 
     termine = true;
 }
