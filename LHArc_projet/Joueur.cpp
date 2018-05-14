@@ -19,5 +19,5 @@ void Joueur::addBut(){
     nombreButs++;
 }
 void Joueur::Afficher(){
-    std::cout<<"Nom: "<<nom<<"Nombre de Buts: "<<nombreButs<<"Niveau Joueur"<<niveauJoueur<<std::endl;
+    std::cout<<"Nom: "<<nom<<std::endl<<"Nombre de Buts: "<<nombreButs<<std::endl<<"Niveau Joueur: "<<niveauJoueur<<std::endl;
 }
