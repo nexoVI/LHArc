@@ -14,6 +14,8 @@ class Equipe
         void engager(Joueur _joueur);
         void afficher();
         void addpalmares(std::string _nom);
+        int getNbrJoueurs();
+        void addButJoueur(int numeroJoueur);
 
         std::string nom;
         short  iD;
