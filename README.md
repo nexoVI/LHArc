@@ -6,7 +6,7 @@ LHArc est un "simulateur" de championnat de hockey. Le simulateur permet de cré
 
 ## Utilisation
 ### Installation
-Ce projet est développé avec **CodeBlocks**. 
+Ce projet est développé avec **CodeBlocks**. Le compilateur utilisé est GNU GCC compiler (C++11).
 
 Pour l'utiliser:
 1. Récupérer le projet en local via un "git clone"
