@@ -2,6 +2,7 @@
 Simulateur de chiamponnat de Hockey
 
 ## Description
+LHArc est un "simulateur" de championnat de hockey.Le simulateur permet de créer un championnat avec un certain nombre d'équipe avec au moins 5 joueurs, de faire jouer toutes les équipes l'une contre l'autre (toute les combinaisons possible, sauf contre elle-même), et enfin d'afficher le classement avec le score des différentes équipes.
 
 ## Utilisation
 Ce projet est développé avec CodeBlocks.
