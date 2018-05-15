@@ -12,8 +12,8 @@ int main()
     Joueur joueur1("Glardon", 0, 99);
     Joueur joueur2("Frantzen", 0, 99);
     Joueur joueur3("Kaufmann", 0, 99);
-    Joueur joueur4("Biloni", 0, 10);
-    Joueur joueur5("Dias", 0, 1);
+    Joueur joueur4("Matthey", 0, 96);
+    Joueur joueur5("Dias", 0, 25);
 
     list<string> listPalmares1;
 
@@ -91,7 +91,7 @@ int main()
     tournoi.AjouterEquipe(equipe3);
     tournoi.AjouterEquipe(equipe4);
 
-    cout << "Les equipes participant au championnat sont :" << endl;
+    cout << "Les equipes participant au championnat sont :" << endl << endl;
     tournoi.AfficherEquipe();
 
     tournoi.AgenderMatch();
@@ -108,7 +108,7 @@ int main()
 
     tournoi.AfficherEquipe();
 
-    std::cout << "-------------------------" << std::endl << "Le classement est:" << std::endl;
+    std::cout << std::endl << "Le classement est : " << std::endl << std::endl;
     tournoi.AfficherClassement();
 
     return 0;

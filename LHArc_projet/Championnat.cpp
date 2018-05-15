@@ -56,7 +56,7 @@ void Championnat::AfficherMatchesJoues()
         if((*itMJ).isTermine() == true)
         {
         cout << endl;
-        cout << "********************************************************************" << endl;
+        cout << "********************************************" << endl;
         cout << endl;
         cout << "Lieu   : " << (*itMJ).Lieu << endl;
         cout << "Equipe : " << (*itMJ).Hote.nom << " - " << (*itMJ).Invite.nom << endl;
@@ -124,9 +124,9 @@ void Championnat::AfficherClassement()
 
     int _max = -1;
     int indexMax = -1;
-    for(int j=0; j<listEquipe.size(); j++)
+    for(unsigned int j=0; j<listEquipe.size(); j++)
     {
-        int k=0;
+        unsigned int k=0;
         _max = -1;
         for(; k<listEquipe.size(); k++)
         {
@@ -142,5 +142,6 @@ void Championnat::AfficherClassement()
 
         std::cout << " " << j+1 << ": " << ite->nom << "; score : " << classement[indexMax] << std::endl;
         classement[indexMax] = -1;
+        cout << "********************************************" << endl;
     }
 }

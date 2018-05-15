@@ -28,7 +28,7 @@ void Equipe::engager(Joueur _joueur){
     joueurs.push_back(_joueur);
 }
 void Equipe::afficher(){
-    std::cout<<"-----------------------------"<<std::endl;
+    std::cout<<"*********************************************"<<std::endl;
     std::cout<<"Nom de l'equipe: "<<nom<<std::endl;
     std::cout<<"iD de l'equipe: "<<iD<<std::endl;
     std::cout<<"Palmares:"<<std::endl;
@@ -42,7 +42,7 @@ void Equipe::afficher(){
         it->Afficher();
         std::cout<<std::endl;
     }
-    std::cout<<"-----------------------------"<<std::endl;
+    std::cout<<"*********************************************"<<std::endl;
     std::cout<<std::endl;
 }
 void Equipe::addpalmares(std::string _nom){
