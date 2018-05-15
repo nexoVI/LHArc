@@ -12,7 +12,7 @@ int main()
     Joueur joueur1("Glardon", 0, 99);
     Joueur joueur2("Frantzen", 0, 99);
     Joueur joueur3("Kaufmann", 0, 99);
-    Joueur joueur4("Matthey", 0, 96);
+    Joueur joueur4("Matthey", 0, 962);
     Joueur joueur5("Dias", 0, 25);
 
     list<string> listPalmares1;
